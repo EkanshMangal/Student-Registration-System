@@ -234,7 +234,7 @@ public class addAdmin extends javax.swing.JFrame {
             String adminMail=mail.getText();
             String adminPass=password.getText();
             
-            String sql="INSERT INTO admin(mail,password,name) values('"+adminName+"','"+adminMail+"','"+adminPass+"') ";
+            String sql="INSERT INTO admin(mail,password,name) values('"+adminMail+"','"+adminPass+"','"+adminName+"') ";
             stmt.executeUpdate(sql);
             JOptionPane.showMessageDialog(null,"Data Inserted Succesfully");
         
